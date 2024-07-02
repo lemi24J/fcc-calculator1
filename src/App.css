@@ -1,0 +1,146 @@
+:root {
+  --white: white;
+  --light-gray: #f0f0ff0;
+  --dark-gray: #6c6c6c;
+  --black: #1e1e1e;
+  --blue: #2174bd;
+  --red: #f01509; 
+
+}
+
+container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calculator {
+  display: grid;
+  grid-template-areas: 
+  "display display display display"
+  "clear negative percentage divide"
+  "seven eight nine multiply"
+  "four five six subtract"
+  "one two three add"
+  "zero zero  decimal equals"
+  ;
+  grid-template-columns: 100px 100px 100px 100px;
+  
+  padding: 50px;
+  padding-top: 10px;
+  margin-top: 20px;
+  
+  background-color: var(--black);
+}
+.light-red {
+  background-color: #f01509;
+}
+.light-gray{
+  background-color: rgb(159, 160, 160);
+}
+.dark-grey {
+  background-color: #6c6c6c;
+}
+.blue {
+  background-color: #2174bd;
+}
+button{
+    font-family: 'Share Tech Mono';
+  height: 100px;
+  font-size: 24px;
+  
+  cursor: pointer;
+  width: 110px;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+#answer {
+  font-size: 48px;
+  height: 48px;
+}
+
+#expression {
+  font-size: 30px;
+  height:30px;
+  color: #edeaea;
+}
+
+#display{
+  grid-area: display;
+}
+#clear {
+  grid-area: clear;
+}
+
+#negative {
+  grid-area: negative;
+}
+#percentage {
+  grid-area: percentage;
+}
+
+#divide {
+  grid-area: divide;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine{
+  grid-area: nine;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#subtract {
+  grid-area: subtract;
+}
+#one {
+  grid-area: one;
+
+}
+#two {
+  grid-area: two;
+}
+#three{
+  grid-area: three;
+}
+#add {
+  grid-area: add;
+}
+#zero{
+  grid-area: zero ;
+  width: 200px;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+#equals {
+  grid-area: equals;
+}
+
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sharetechmono/v15/J7aHnp1uDWRBEqV98dVQztYldFcLowEF.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
